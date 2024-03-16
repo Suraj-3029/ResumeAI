@@ -3,9 +3,9 @@ kind: Service
 metadata:
   name: resumebuilderbackend-svc
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: resumebuilderbackend
   ports:
-  - port: 3000
-    targetPort: 3000
+  - port: 4292
+    targetPort: 4292
