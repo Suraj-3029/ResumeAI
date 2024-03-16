@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: resume-builder-be-k8s
-        image: suraj2143/resume-builder-be:49
+        image: ${env.DOCKER_IMAGE_RESUME_BUILDER_BACKEND}:${env.BUILD_ID}
         resources:
           limits:
             memory: "512Mi"
